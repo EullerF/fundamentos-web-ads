@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #2a6bf2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+#vantagens ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+#vantagens li {
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+
+main section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Deixando a logo de um lado e menu do outro */
+    align-items: center; /* Ambos centralizado verticalmente */
+    flex-wrap: wrap; /*Em telas menores o menu quebra linha*/
+}
+
+header .logo{
+    margin-bottom: 10px;
+    display: flex; /*Flexbox tenho da logo para alinha imagem e titulo*/
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.eventos-container{
+    display: flex;
+    flex-wrap: wrap; /* Em telas estreitas, os cards quebram para novas linhas */
+    gap: 20px;
+}
+
+.evento-item{
+    /* flex-grow: 1 | flex-shrink: 1 | flex-basis: 250px */
+    flex: 1 1 250px; /* Cresce em 1 | Encolhe em 1 | Tamanho 250px */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+main {
+    flex: 1; /* O main cresce e ocupada todo espaço que esta sobrando, forçando o footer a ficar embaixo */
+}
